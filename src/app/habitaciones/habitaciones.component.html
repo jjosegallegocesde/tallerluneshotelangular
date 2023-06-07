@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col" *ngFor="let habitacion of habitaciones">
+            <div class="card h100 shadow p-3 text-center">
+                <h2>{{habitacion.nombre}}</h2>
+                <img src={{habitacion.foto}} alt="" class="img-fluid w-100">
+                <h5>{{habitacion.precio}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
